@@ -1,0 +1,73 @@
+@import "../../assets/styles/vars";
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--color-white);
+  z-index: 30;
+  @extend %shadow-regular;
+  &__container.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  //----------LEFT PART----------
+  &__left {
+    display: flex;
+  }
+
+  &__logo {
+    margin-right: 60px;
+  }
+
+  &__menu-list {
+    display: flex;
+  }
+
+  &__menu-item {
+    margin-right: 40px;
+  }
+
+  &__menu-item-link{
+    @extend %base-bold;
+    color: var(--color-gray-800);
+    transition: .3s ease;
+    &:hover{
+      color: var(--color-primary);
+    }
+  }
+
+  //----------RIGHT PART----------
+  &__contacts-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__contacts-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__contacts-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__contacts-icon{
+    margin: auto 20px auto 0;
+  }
+
+  &__contacts-label{
+    @extend %small-bold;
+    color: var(--color-gray-800);
+  }
+
+  &__contacts-data{
+    @extend %large-regular;
+    color: var(--color-gray-900);
+  }
+}

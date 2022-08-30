@@ -1,0 +1,127 @@
+@import "../../../assets/styles/vars";
+
+
+.heroslider{
+  //margin-bottom: 100px;
+
+  .slick-prev {
+    left: -25px;
+  }
+  .slick-slider.slick-initialized{
+    .slick-arrow {
+      width: 48px;
+      height: 48px;
+      background: rgba(#FFFFFF, 0.5);
+      border-radius: 100%;
+      transition: .3s ease;
+      &:hover{
+        background: var(--color-white);
+      }
+    }
+    .slick-arrow.slick-prev{
+      left: 32px;
+      z-index: 20;
+    }
+    .slick-arrow.slick-next{
+      right: 32px;
+      & + .slick-dots{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 220px;
+        display: block;
+        width: 1260px;
+        padding: 0 15px;
+        color: #FFFFFF;
+        text-align: left;
+        counter-reset: item;
+        & .slick-active button{
+          transition: .3s ease;
+          &::before{
+            color: #FFFFFF;
+          }
+          &::after{
+            background: #FFFFFF;
+          }
+        }
+        & li{
+          margin-right: 140px;
+          width: 42px;
+          height: 32px;
+        }
+        & li button{
+          transition: 2s ease;
+        }
+        & li button::before {
+          content: "0" counter(item);
+          counter-increment: item;
+          position: absolute;
+          top: 0;
+          left: 0;
+          cursor: pointer;
+          font-family: 'Ubuntu', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 150%;
+          color: rgba(#FFFFFF, 0.6);
+          transition: .3s ease;
+        }
+        & li button::after {
+          content: '';
+          position: absolute;
+          bottom: -15px;
+          left: 0;
+          width: 178px;
+          height: 1px;
+          background: rgba(#FFFFFF, 0.6);
+          transition: .3s ease;
+        }
+      }
+    }
+
+    .slick-next:before {
+      content: url('../../../assets/img/homepage/heroslider/arrownext.svg');
+      position: relative;
+      top: -3px;
+      color: var(--color-gray-800);
+    }
+    .slick-prev:before {
+      content: url('../../../assets/img/homepage/heroslider/arrowprev.svg');
+      color: var(--color-gray-800);
+      position: relative;
+      top: -3px;
+    }
+  }
+
+
+
+
+
+
+  &__wrapper{
+    padding: 220px 0 350px 0;
+    background-size: cover;
+  }
+  &__logotext{
+    @extend %display-1;
+    letter-spacing: 1px;
+    color: var(--color-white);
+    max-width: 577px;
+    margin-bottom: 25px;
+    & span{
+      color: var(--color-primary);
+    }
+  }
+  &__text{
+    @extend %lead-regular;
+    color: var(--color-white);
+    max-width: 595px;
+    margin-bottom: 60px;
+  }
+  .button:first-of-type{
+    margin-right: 25px;
+  }
+}
+
+

@@ -1,0 +1,121 @@
+@import 'vars.scss';
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//// slick-track is the container of all slide items
+.slick-track {
+  display: flex;
+  align-items: stretch;
+}
+// slick slide is the container of a single slide item. There is also a wrapper div before our custom component
+.slick-slide {
+  display: flex;
+  align-self: stretch;
+  height: unset;
+  > div {
+    display: flex;
+    align-self: stretch;
+    height: 100%;
+  }
+}
+html,
+body {
+  //height: 100%;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787A80;
+}
+
+.container{
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: #C4C4C4;
+}
+
+h2{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: #C4C4C4;
+}
+
+h3{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #C4C4C4;
+}
+
+h4{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #C4C4C4;
+}
+
+h5{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #C4C4C4;
+}
+
+h6{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #C4C4C4;
+}
+
+p{
+  margin: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}
