@@ -9,6 +9,7 @@ import Portfolio from "./Portfolio/Portfolio";
 import Clients from "./Clients/Clients";
 import Testimonials from "./Testimonials/Testimonials";
 import Figures from "./Figures/Figures";
+import News from "./News/News";
 
 
 const Homepage = () => {
@@ -21,8 +22,11 @@ const Homepage = () => {
       <Services/>
       <Portfolio/>
       <Clients/>
-      <Testimonials/>
-      <Figures/>
+      <div className="homepage__background">
+        <Testimonials/>
+        <Figures/>
+        <News/>
+      </div>
     </section>
   )
 };

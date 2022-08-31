@@ -2,10 +2,13 @@
 
 
 .services{
+
   &__wrapper{
-    background: var(--color-gray-200);
+    //background: var(--color-gray-200);
+    background: url("../../../assets/img/homepage/services/bg-image.png") var(--color-gray-200) top center no-repeat;
     transform: translateY(-100px);
     padding-top: 212px;
+    padding-bottom: 85px;
   }
 
   &__title{
@@ -112,9 +115,7 @@
   &__learn{
     color: var(--color-gray-900);
     margin-right: 40px;
-    margin-bottom: 85px;
     display: inline-block;
-
   }
 
   .button{

@@ -2,7 +2,7 @@
 
 
 .portfolio{
-
+  margin-bottom: 125px;
   &__container.container{
 
     .slick-list {
@@ -115,19 +115,17 @@
     z-index: 10;
     transition: .3s ease;
   }
-  &__explore{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 125px;
-  }
-  &__explore-title{
-    color: var(--color-gray-900)
-  }
 }
 
-
+.explore{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.explore-title{
+  color: var(--color-gray-900)
+}
 
 
 

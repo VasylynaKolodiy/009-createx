@@ -12,7 +12,45 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+const data = [
+  {
+    link: '#',
+    image: image1,
+    title: 'Red Finger Building',
+    description: 'Business Centers'
+  },
+  {
+    link: '#',
+    image: image2,
+    title: 'Cubes Building',
+    description: 'Business Centers'
+  },
+  {
+    link: '#',
+    image: image3,
+    title: 'The Pencil Building',
+    description: 'Stores & Malls'
+  },
 
+  {
+    link: '#',
+    image: image3,
+    title: 'The Pencil Building',
+    description: 'Stores & Malls'
+  },
+  {
+    link: '#',
+    image: image2,
+    title: 'Cubes Building',
+    description: 'Business Centers'
+  },
+  {
+    link: '#',
+    image: image1,
+    title: 'Red Finger Building',
+    description: 'Business Centers'
+  }
+]
 
 const Portfolio = () => {
 
@@ -23,46 +61,6 @@ const Portfolio = () => {
     slidesToShow: 3,
     slidesToScroll: 3
   };
-
-  const data = [
-    {
-      link: '#',
-      image: image1,
-      title: 'Red Finger Building',
-      description: 'Business Centers'
-    },
-    {
-      link: '#',
-      image: image2,
-      title: 'Cubes Building',
-      description: 'Business Centers'
-    },
-    {
-      link: '#',
-      image: image3,
-      title: 'The Pencil Building',
-      description: 'Stores & Malls'
-    },
-
-    {
-      link: '#',
-      image: image3,
-      title: 'The Pencil Building',
-      description: 'Stores & Malls'
-    },
-    {
-      link: '#',
-      image: image2,
-      title: 'Cubes Building',
-      description: 'Business Centers'
-    },
-    {
-      link: '#',
-      image: image1,
-      title: 'Red Finger Building',
-      description: 'Business Centers'
-    }
-  ]
 
   return (
     <section className="portfolio" >
@@ -95,8 +93,8 @@ const Portfolio = () => {
           )}
           </Slider>
 
-          <div className="portfolio__explore">
-            <h3 className="portfolio__explore-title">
+          <div className="explore">
+            <h3 className="explore-title">
               Explore all our works
             </h3>
             <Button

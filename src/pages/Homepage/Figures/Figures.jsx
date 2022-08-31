@@ -4,13 +4,10 @@ import './Figures.scss';
 // Import react-circular-progressbar module and styles
 import {
   CircularProgressbar,
-  CircularProgressbarWithChildren,
+  // CircularProgressbarWithChildren,
   buildStyles
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-const percentage = 66;
-
-
 
 const Figures = () => {
   

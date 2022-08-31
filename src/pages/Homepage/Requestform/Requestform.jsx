@@ -2,6 +2,7 @@ import React from "react";
 import './Requestform.scss';
 import Input from "../../../components/Input/Input";
 import Button from "../../../components/Button/Button";
+import Textarea from "../../../components/Textarea/Textarea";
 
 
 
@@ -29,14 +30,17 @@ const Requestform = () => {
             color = "light"
             label= "Phone"
           />
-          <Input
-            id = "requestform__input-message"
+
+          <Textarea
+            id = "requestform__textarea-message"
             placeholder = "Your message"
-            type = "text"
             length = "default"
             color = "light"
+            rows = "1"
             label= "Message"
           />
+
+
           <Button
             title='Send'
             type='submit'

@@ -5,7 +5,9 @@ import {ReactComponent as Construction} from '../../../assets/img/homepage/servi
 import {ReactComponent as Project} from '../../../assets/img/homepage/services/project.svg';
 import {ReactComponent as Design} from '../../../assets/img/homepage/services/design.svg';
 import {ReactComponent as Repairs} from '../../../assets/img/homepage/services/repairs.svg';
-import servicesBg from  '../../../assets/img/homepage/services/background.jpg';
+import servicesBg from  '../../../assets/img/homepage/services/background-icon.jpg';
+import servicesFon from  '../../../assets/img/homepage/services/bg-image.png';
+
 import Button from "../../../components/Button/Button";
 
 

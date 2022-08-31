@@ -1,0 +1,84 @@
+@import "../../assets/styles/vars";
+
+//id = "footer-message"
+//placeholder = "Your message"
+//length = "large" / "default" / "small"
+//color = "light" / "dark"
+//rows = "1" / "2" / "3" ... / "n"
+//label = "Message:"
+
+.textarea{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.textareaWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea.large{
+  padding: 13px 16px;
+  width: 390px;
+  @extend %base-regular;
+  & + label {
+    @extend %base-regular;
+    color: var(--color-gray-800);
+  }
+}
+
+.textarea.default{
+  padding: 11px 16px;
+  width: 390px;
+  @extend %small-regular;
+  & + label {
+    @extend %small-regular;
+    color: var(--color-gray-800);
+  }
+}
+
+.textarea.small{
+  padding: 9px 12px;
+  width: 390px;
+  @extend %extrasmall-regular;
+  & + label {
+    @extend %extrasmall-regular;
+    color: var(--color-gray-800);
+  }
+}
+
+.textarea.light{
+  background: var(--color-gray-200);
+  border: 1px solid var(--color-gray-400);
+  color: var(--color-gray-600);
+}
+
+.textarea.dark{
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  & + label {
+    color: var(--color-white);
+  }
+}
+
+.textarea + label {
+  display: block;
+  order: -1;
+  margin-bottom: 8px;
+}
+
+.textarea{
+  border-radius: 4px;
+  outline: none;
+  &:focus{
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 90, 48, 0.4);
+    box-shadow: 0 80px 80px -20px rgba(255, 90, 48, 0.08), 0px 30px 24px -10px rgba(255, 90, 48, 0.05), 0px 12px 10px -6px rgba(255, 90, 48, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    color: var(--color-gray-800);
+  }
+  &:read-only, &:disabled{
+    background: var(--color-gray-200);
+    border: 1px solid var(--color-gray-400);
+    color: var(--color-gray-600);
+  }
+}

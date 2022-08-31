@@ -4,9 +4,8 @@
   position: relative;
   z-index: 5;
   &__container.container{
-    padding: 48px 60px;
+    padding: 0 60px 60px 48px;
     background-color: var(--color-white);
-    //border: 1px solid black;
   }
   &__title{
     margin-bottom: 32px;
@@ -17,10 +16,13 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 10px;
-    .input.default{
-      width: 260px;
-    }
+    gap: 24px;
   }
 
+  #requestform__input-name, #requestform__input-phone{
+    width: 260px;
+  }
+  #requestform__input-message{
+    width: 414px;
+  }
 }
