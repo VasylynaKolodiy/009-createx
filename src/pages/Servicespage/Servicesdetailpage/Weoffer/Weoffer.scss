@@ -1,0 +1,49 @@
+@import "../../../../assets/styles/vars";
+
+.weoffer{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  &__container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 100px;
+  }
+  &__imgwrapper{
+    width: 58%;
+  }
+  &__info{
+    width: 36%;
+  }
+  &__details{
+    margin-bottom: 24px;
+    transition: .3s ease;
+  }
+  &__title{
+    color: var(--color-gray-900);
+    margin-bottom: 60px;
+  }
+  &__summary-title{
+    color: var(--color-gray-900);
+    display: inline-block;
+    margin-bottom: 12px;
+    padding-left: 12px;
+  }
+  &__description{
+    color: var(--color-gray-700);
+    @extend %base-regular;
+    padding-left: 32px;
+  }
+  &__details[open]{
+    .weoffer__summary::marker {
+      content: '−';
+    }
+  }
+  &__summary::marker{
+    content: '+';
+    width: 22px;
+    font-size: 38px;
+    color: var(--color-primary);
+
+  }
+}

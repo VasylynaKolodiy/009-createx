@@ -1,0 +1,27 @@
+@import "../../assets/styles/vars";
+
+.pagetitle{
+  padding-top: 162px;
+  //padding-bottom: 165px;
+  height: 600px;
+  background-position: top right;
+  background-color: var(--color-gray-200);
+  background-size: contain;
+
+  &__title{
+    max-width: 600px;
+    @extend %display-1;
+    color: var(--color-gray-900);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+  &__description{
+    max-width: 600px;
+    @extend %lead-regular;
+    color: var(--color-gray-700);
+  }
+
+
+
+}
+

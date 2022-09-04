@@ -1,40 +1,9 @@
 import React from "react";
 import './OurSomething.scss';
 
-import {ReactComponent as Quality} from '../../assets/img/our-something/quality.svg';
-import {ReactComponent as Comfort} from '../../assets/img/our-something/comfort.svg';
-import {ReactComponent as Safety} from '../../assets/img/our-something/safety.svg';
-
-
-const data =
-  {
-    title: 'Our core values',
-    description: 'Our mission is to set the highest standards for construction sphere.',
-    items: [
-      {
-        icon: <Quality/>,
-        subtitle: 'Quality',
-        subdescription: 'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.'
-      },
-      {
-        icon: <Comfort/>,
-        subtitle: 'Comfort',
-        subdescription: 'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.'
-      },
-      {
-        icon: <Safety/>,
-        subtitle: 'Safety',
-        subdescription: 'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.'
-      }
-    ]
-  }
-
-
-
-
-const OurSomething = () => {
+const OurSomething = ({data}) => {
   return (
-    <section className="our-something">
+    <section className={`our-something ${data.color}`} >
       <div className="container our-something__container">
         <h1 className="our-something__title">
           {data.title}

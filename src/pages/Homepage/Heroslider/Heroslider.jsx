@@ -56,6 +56,7 @@ const Heroslider = () => {
                   type='button'
                   color='inverse'
                   length='large'
+                  link = 'http://localhost:3000/about-us'
                 />
                 <Button
                   title='SUBMIT REQUEST'

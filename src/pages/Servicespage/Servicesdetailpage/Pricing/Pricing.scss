@@ -1,0 +1,72 @@
+@import "../../../../assets/styles/vars";
+
+.pricing{
+  background: var(--color-gray-200) url("../../../../assets/img/servicespage/pricing/bg.png") top left no-repeat;
+  padding-top: 80px;
+  &__title{
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--color-gray-900);
+  }
+  &__description{
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--color-gray-700);
+    @extend  %large-regular;
+  }
+
+  &__table{
+    padding: 32px 0 16px 0;
+    background: #FFFFFF;
+    border: 1px solid var(--color-gray-300);
+    box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+  }
+  &__head{
+    padding-bottom: 24px;
+    color: var(--color-gray-900);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  &__basic, &__standard, &__business{
+    text-align: center;
+  }
+  &__head-top{
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  &__head-bottom{
+    font-style: normal;
+    color: var(--color-gray-700);
+  }
+  &__head, &__row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  &__row{
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-gray-800);
+  }
+  &__row:nth-child(2n+1){
+    background-color: var(--color-gray-200);
+  }
+  .pricing__cell{
+    width: 20%;
+  }
+
+  .pricing__cell.pricing__items{
+    width: 40%;
+    padding-left: 24px;
+  }
+  .button{
+    margin-top: 16px;
+  }
+
+}

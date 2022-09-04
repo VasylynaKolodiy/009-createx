@@ -3,57 +3,12 @@ import './Portfolio.scss';
 
 import Button from "../../../components/Button/Button";
 
-import image1 from '../../../assets/img/homepage/portfolio/image1.jpg';
-import image2 from '../../../assets/img/homepage/portfolio/image2.jpg';
-import image3 from '../../../assets/img/homepage/portfolio/image3.jpg';
-
 // Import css files for slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const data = [
-  {
-    link: '#',
-    image: image1,
-    title: 'Red Finger Building',
-    description: 'Business Centers'
-  },
-  {
-    link: '#',
-    image: image2,
-    title: 'Cubes Building',
-    description: 'Business Centers'
-  },
-  {
-    link: '#',
-    image: image3,
-    title: 'The Pencil Building',
-    description: 'Stores & Malls'
-  },
-
-  {
-    link: '#',
-    image: image3,
-    title: 'The Pencil Building',
-    description: 'Stores & Malls'
-  },
-  {
-    link: '#',
-    image: image2,
-    title: 'Cubes Building',
-    description: 'Business Centers'
-  },
-  {
-    link: '#',
-    image: image1,
-    title: 'Red Finger Building',
-    description: 'Business Centers'
-  }
-]
-
-const Portfolio = () => {
-
+const Portfolio = ({data}) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -64,15 +19,14 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio" >
-
       <div className="portfolio__container container">
         <h1 className="portfolio__title">
-          Browse our selected projects and learn more about our work
+          {data.title}
         </h1>
 
         <div className="portfolio__slider">
           <Slider {...settings}>
-          {data.map((item, i) =>
+          {data.items.map((item, i) =>
                 <div className="portfolio__item" key={i}>
                   <a className="portfolio__link" href={item.link}>
                   </a>
@@ -102,6 +56,7 @@ const Portfolio = () => {
               type='button'
               color='primary'
               length='large'
+              link = 'http://localhost:3000/work'
             />
           </div>
 

@@ -1,0 +1,28 @@
+@import "../../assets/styles/vars";
+
+.breadcrumbs{
+  &__container.container{
+    padding-bottom: 40px;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+  }
+  &__item-link, &__first-item-link{
+    display: inline-block;
+    @extend %small-regular;
+    color: var(--color-gray-800);
+  }
+  &__item:last-child {
+    & a{
+      color: var(--color-gray-600);
+      cursor: alias;
+    }
+  }
+  &__item:not(:first-child):before{
+    content: '/';
+    padding-right: 11px;
+  }
+}

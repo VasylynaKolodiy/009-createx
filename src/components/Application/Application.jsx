@@ -60,15 +60,7 @@ const Application = () => {
             color='primary'
             length='regular'
           />
-
-
-
-
         </form>
-
-
-
-
 
       </div> {/*application__container*/}
     </section>

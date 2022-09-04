@@ -146,12 +146,14 @@ const Footer = () => {
                 length = "default"
                 color = "dark"
               />
+
               <Button
                 title='Subscribe'
                 type='submit'
                 color='primary'
                 length='regular'
               />
+
             </form>
 
             <p className="footer__note">
@@ -208,10 +210,11 @@ const Footer = () => {
               <p className="footer__gototop-link">
                 Go to top
               </p>
-              <button className="footer__gototop-btn">
-                <a className="footer__gototop-link1" href="#top">
-                  <TopButton/>
-                </a>
+              <button
+                className="footer__gototop-btn"
+                onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+              >
+                <TopButton/>
               </button>
 
             </div>

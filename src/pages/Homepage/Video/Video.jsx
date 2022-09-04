@@ -1,21 +1,17 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import './Video.scss';
 import videoPoster from '../../../assets/img/homepage/videoPoster.jpg';
+import video from '../../../assets/img/homepage/video.webm';
 
 const Video = () => {
 
+  const vidRef = useRef(null);
+  const [muted, setMuted] = useState(true);
 
-
-
-  function playPause() {
-    const myVideo = document.getElementById("video__play");
-    console.log(myVideo, 'myVideo')
-    if (myVideo.paused)
-      myVideo.play();
-    else
-      myVideo.pause();
+  const handlePlayVideo = () => {
+    if (vidRef.current.paused) vidRef.current.play();
+    else vidRef.current.pause();
   }
-
 
   return (
     <section className="video" >
@@ -28,11 +24,12 @@ const Video = () => {
           </p>
 
           <div className="video__object">
-            <video className="video__play" id="video__play" poster={videoPoster}>
-              <source className="video__source" src="../../../assets/img/homepage/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+            <video ref={vidRef} className="video__play" id="video__play" poster={videoPoster} muted={muted} loop>
+              <source className="video__source" src={video} type='video/webm'/>
             </video>
 
-            <button className="video__playbtn" id="video__playbtn" onClick={playPause}></button>
+            <button className="video__playbtn" id="video__playbtn" onClick={handlePlayVideo}/>
+            <button onClick={() => setMuted(!muted)}>volume</button>
           </div>
         </div> {/*video__container*/}
     </section>

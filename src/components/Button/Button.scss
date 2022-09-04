@@ -4,7 +4,21 @@
 //type = "button" / ""submit" / "reset"
 //color = "primary" / "inverse"
 //length = "large" / "regular" / "small"
+//link = "http://localhost:3000/"
 //withAddIcon
+
+.buttonWrapper{
+  display: inline-block;
+  position: relative;;
+}
+
+.buttonlink{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 .button{
   letter-spacing: 0.5px;
@@ -14,8 +28,8 @@
   cursor: pointer;
 }
 .button.large{
-  padding: 0 40px;
-  height: 52px;
+  padding: 13.22px 40px;
+  //height: 52px;
   @extend %base-bold;
   & svg{
     margin-left: 11px;
@@ -25,8 +39,8 @@
 }
 
 .button.regular{
-  padding: 0 32px;
-  height: 44px;
+  padding: 11.5px 32px;
+  //height: 44px;
   @extend %small-bold;
   & svg{
     margin-left: 10px;
@@ -36,8 +50,8 @@
 }
 
 .button.small{
-  padding: 0 24px;
-  height: 36px;
+  padding: 9px 24px;
+  //height: 36px;
   @extend %extrasmall-bold;
   & svg{
     margin-left: 10px;
@@ -63,7 +77,6 @@
     fill: var(--color-white);
   }
 }
-
 .button.inverse{
   color: var(--color-primary);
   background: var(--color-white);

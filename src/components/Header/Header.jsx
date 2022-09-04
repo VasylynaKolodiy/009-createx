@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './Header.scss';
 import { NavLink, Link } from "react-router-dom";
 
@@ -7,44 +7,52 @@ import iphone from '../../assets/img/iphone.svg';
 import chat from '../../assets/img/chat.svg';
 
 const Header = () => {
+
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => setScroll(window.scrollY > 0));
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${scroll ? 'fixed' : ''}`}>
       <div className="container header__container">
         <div className="header__left">
           <div className="header__logo">
-            <a className="header__logo-link" href="#">
-              <img className="header__logo-img" src={logo} alt="Header logo" />
-            </a>
+            <Link className="header__logo-link" to="/">
+              <img className="header__logo-img" src={logo} alt="Header logo"/>
+            </Link>
           </div>
           <nav className="header__menu">
             <ul className="header__menu-list">
               <li className="header__menu-item">
-                {/*<a className="header__menu-item-link" href="#">*/}
+                {/*<Link className="header__menu-item-link" to="#">*/}
                 {/*  About Us*/}
-                {/*</a>*/}
-                <NavLink className="header__menu-item-link" to="/">
+                {/*<Link/>*/}
+                {/*<NavLink to="/" activeClassName="active">Home</NavLink>*/}
+                <NavLink className="header__menu-item-link" to="/about-us">
                   About Us
                 </NavLink>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-item-link" href="#">
+                <NavLink className="header__menu-item-link" to="/services">
                   Services
-                </a>
+                </NavLink>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-item-link" href="#">
+                <NavLink className="header__menu-item-link" to="/work">
                   Work
-                </a>
+                </NavLink>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-item-link" href="#">
+                <NavLink className="header__menu-item-link" to="/news">
                   News
-                </a>
+                </NavLink>
               </li>
               <li className="header__menu-item">
-                <a className="header__menu-item-link" href="#">
+                <NavLink className="header__menu-item-link" to="/contacts">
                   Contacts
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>

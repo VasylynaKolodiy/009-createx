@@ -101,6 +101,7 @@ const News = () => {
             type='button'
             color='primary'
             length='large'
+            link='http://localhost:3000/news'
           />
         </div>
        

@@ -6,7 +6,6 @@ import {ReactComponent as Project} from '../../../assets/img/homepage/services/p
 import {ReactComponent as Design} from '../../../assets/img/homepage/services/design.svg';
 import {ReactComponent as Repairs} from '../../../assets/img/homepage/services/repairs.svg';
 import servicesBg from  '../../../assets/img/homepage/services/background-icon.jpg';
-import servicesFon from  '../../../assets/img/homepage/services/bg-image.png';
 
 import Button from "../../../components/Button/Button";
 
@@ -80,6 +79,7 @@ const Services = () => {
               type='button'
               color='primary'
               length='large'
+              link='http://localhost:3000/servies'
             />
           </div>
 
