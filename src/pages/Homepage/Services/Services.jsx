@@ -2,7 +2,7 @@ import React from "react";
 import './Services.scss';
 
 import {ReactComponent as Construction} from '../../../assets/img/homepage/services/construction.svg';
-import {ReactComponent as Project} from '../../../assets/img/homepage/services/project.svg';
+import {ReactComponent as Development} from '../../../assets/img/homepage/services/project.svg';
 import {ReactComponent as Design} from '../../../assets/img/homepage/services/design.svg';
 import {ReactComponent as Repairs} from '../../../assets/img/homepage/services/repairs.svg';
 import servicesBg from  '../../../assets/img/homepage/services/background-icon.jpg';
@@ -19,7 +19,7 @@ const data = [
   },
   {
     link: '#',
-    icon: <Project/>,
+    icon: <Development/>,
     description: 'Project Development',
     background: servicesBg
   },

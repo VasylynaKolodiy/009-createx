@@ -13,7 +13,8 @@ const Pagetitle = ({title, description, background}) => {
       <Breadcrumbs/>
       <div className="pagetitle__container container">
         <h1 className="pagetitle__title">
-          {data[0]}
+          {data[0].replace('-', ' ')}
+          {/*{title}*/}
         </h1>
         <p className="pagetitle__description">
           {description}

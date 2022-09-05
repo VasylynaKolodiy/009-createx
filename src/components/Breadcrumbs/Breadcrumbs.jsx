@@ -16,9 +16,16 @@ const Breadcrumbs = () => {
           </li>
           {data.map((item, i) =>
           <li className="breadcrumbs__item" key={i}>
-            <Link className="breadcrumbs__item-link" to={`/${item}`} >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </Link>
+            { i < (data.length-1) ?
+              <Link className="breadcrumbs__item-link" to={`/${item}`} >
+                {(item.charAt(0).toUpperCase() + item.slice(1)).replace('-', ' ')}
+              </Link>
+              :
+              <span className="breadcrumbs__item-link">
+                {(item.charAt(0).toUpperCase() + item.slice(1)).replace('-', ' ')}
+              </span>
+            }
+
           </li>
             )}
         </ul>

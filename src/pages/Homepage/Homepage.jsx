@@ -14,11 +14,6 @@ import {ReactComponent as Quality} from "../../assets/img/our-something/quality.
 import {ReactComponent as Comfort} from "../../assets/img/our-something/comfort.svg";
 import {ReactComponent as Safety} from "../../assets/img/our-something/safety.svg";
 
-import image1 from "../../assets/img/homepage/portfolio/image1.jpg";
-import image2 from "../../assets/img/homepage/portfolio/image2.jpg";
-import image3 from "../../assets/img/homepage/portfolio/image3.jpg";
-
-
 const ourSomethingData =
   {
     title: 'Our core values',
@@ -42,50 +37,6 @@ const ourSomethingData =
     ]
   }
 
-const portfolioData = {
-  title: 'Browse our selected projects and learn more about our work',
-  items: [
-  {
-    link: '#',
-    image: image1,
-    title: 'Red Finger Building',
-    description: 'Business Centers'
-  },
-  {
-    link: '#',
-    image: image2,
-    title: 'Cubes Building',
-    description: 'Business Centers'
-  },
-  {
-    link: '#',
-    image: image3,
-    title: 'The Pencil Building',
-    description: 'Stores & Malls'
-  },
-
-  {
-    link: '#',
-    image: image3,
-    title: 'The Pencil Building',
-    description: 'Stores & Malls'
-  },
-  {
-    link: '#',
-    image: image2,
-    title: 'Cubes Building',
-    description: 'Business Centers'
-  },
-  {
-    link: '#',
-    image: image1,
-    title: 'Red Finger Building',
-    description: 'Business Centers'
-  }
-]
-}
-
-
 const Homepage = () => {
   return (
     <section className="homepage">
@@ -94,7 +45,7 @@ const Homepage = () => {
       <OurSomething data={ourSomethingData}/>
       <Requestform/>
       <Services/>
-      <Portfolio data={portfolioData}/>
+      <Portfolio/>
       <Clients/>
       <div className="homepage__background">
         <Testimonials/>

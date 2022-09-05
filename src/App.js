@@ -6,6 +6,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import Application from "./components/Application/Application";
 import Servicespage from "./pages/Servicespage/Servicespage";
 import Servicesdetailpage from "./pages/Servicespage/Servicesdetailpage/Servicesdetailpage";
+import Workpage from "./pages/Workpage/Workpage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Homepage/>} exact />
         <Route path="/services" element={<Servicespage/>} exact />
         <Route path="/services/:title" element={<Servicesdetailpage/>} exact />
+        <Route path="/work" element={<Workpage/>} exact />
       </Routes>
       <Application/>
       <Footer/>
