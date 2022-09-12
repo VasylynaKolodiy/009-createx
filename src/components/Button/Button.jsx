@@ -1,6 +1,6 @@
 import React from 'react'
 import './Button.scss'
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {ReactComponent as Arrow} from '../../assets/img/button/arrow-inverse-large.svg';
 
 const Button = ({title, type, color, length, link, withAddIcon}) => {
@@ -16,7 +16,7 @@ const Button = ({title, type, color, length, link, withAddIcon}) => {
           )}
         </button>
       ) : (
-        <button type={type} className={`button ${color} ${length}`} formaction='#'>
+        <button type={type} className={`button ${color} ${length}`} formAction='#'>
           <span>{title}</span>
           {withAddIcon && (
             <Arrow/>

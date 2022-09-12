@@ -1,0 +1,51 @@
+@import "../../../../assets/styles/vars";
+
+.comments{
+  &__title{
+    color: var(--color-gray-900);
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__item{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__item-leftpart{
+    width: 20%;
+  }
+
+  &__item-rightpart{
+    width: 83%;
+  }
+  &__item-name{
+    @extend %large-bold;
+    color: var(--color-gray-900);
+    margin-bottom: 8px;
+  }
+  &__item-data, &__item-reply{
+    @extend %small-regular;
+    color: var(--color-gray-700);
+  }
+  &__item-reply svg{
+    margin-right: 10px;
+  }
+  &__item-reply svg path{
+    transition: .3s ease;
+  }
+  &__item-reply:hover{
+    & svg path{
+      fill: var(--color-primary);
+    }
+  }
+  &__item-text{
+    @extend %base-regular;
+    color: var(--color-gray-800);
+    margin-bottom: 16px;
+  }
+
+}

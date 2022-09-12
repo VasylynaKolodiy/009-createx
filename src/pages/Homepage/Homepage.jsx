@@ -13,6 +13,90 @@ import News from "./News/News";
 import {ReactComponent as Quality} from "../../assets/img/our-something/quality.svg";
 import {ReactComponent as Comfort} from "../../assets/img/our-something/comfort.svg";
 import {ReactComponent as Safety} from "../../assets/img/our-something/safety.svg";
+import image1 from "../../assets/img/homepage/portfolio/image1.jpg";
+import image2 from "../../assets/img/homepage/portfolio/image2.jpg";
+import image3 from "../../assets/img/homepage/portfolio/image3.jpg";
+
+import {ReactComponent as Client1} from '../../assets/img/homepage/clients/clientslogo1.svg';
+import {ReactComponent as Client2} from '../../assets/img/homepage/clients/clientslogo2.svg';
+import {ReactComponent as Client3} from '../../assets/img/homepage/clients/clientslogo3.svg';
+import {ReactComponent as Client4} from '../../assets/img/homepage/clients/clientslogo4.svg';
+import {ReactComponent as Client5} from '../../assets/img/homepage/clients/clientslogo5.svg';
+import {ReactComponent as Client6} from '../../assets/img/homepage/clients/clientslogo6.svg';
+
+
+const dataClients = [
+  {
+    link: "#",
+    logo: <Client1/>
+  },
+  {
+    link: "dfgdf#",
+    logo: <Client2/>
+  },
+  {
+    link: "#",
+    logo: <Client3/>
+  },
+  {
+    link: "#",
+    logo: <Client4/>
+  },
+  {
+    link: "#",
+    logo: <Client5/>
+  },
+  {
+    link: "#",
+    logo: <Client6/>
+  }
+]
+
+
+
+
+
+
+const title = 'Browse our selected projects and learn more about our work'
+const portfolioItemData = [
+  {
+    link: '#',
+    image: image1,
+    title: 'Red Finger Building',
+    description: 'Business Centers'
+  },
+  {
+    link: '#',
+    image: image2,
+    title: 'Cubes Building',
+    description: 'Business Centers'
+  },
+  {
+    link: '#',
+    image: image3,
+    title: 'The Pencil Building',
+    description: 'Stores & Malls'
+  },
+
+  {
+    link: '#',
+    image: image3,
+    title: 'The Pencil Building',
+    description: 'Stores & Malls'
+  },
+  {
+    link: '#',
+    image: image2,
+    title: 'Cubes Building',
+    description: 'Business Centers'
+  },
+  {
+    link: '#',
+    image: image1,
+    title: 'Red Finger Building',
+    description: 'Business Centers'
+  },
+]
 
 const ourSomethingData =
   {
@@ -45,8 +129,8 @@ const Homepage = () => {
       <OurSomething data={ourSomethingData}/>
       <Requestform/>
       <Services/>
-      <Portfolio/>
-      <Clients/>
+      <Portfolio title={title} portfolioItemData={portfolioItemData}/>
+      <Clients data={dataClients}/>
       <div className="homepage__background">
         <Testimonials/>
         <Figures/>

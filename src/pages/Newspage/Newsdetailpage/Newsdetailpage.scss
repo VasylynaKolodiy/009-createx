@@ -1,0 +1,24 @@
+@import "../../../assets/styles/vars";
+
+.newsdetailpage {
+  .pagetitle__title {
+    @extend %display-2;
+    color: var(--color-gray-900);
+    text-transform: capitalize;
+    max-width: none;
+    margin-bottom: 50px;
+  }
+
+  .pagetitle__description {
+    max-width: none;
+  }
+
+  .newsitem__item-meta{
+    padding-top: 30px;
+  }
+
+
+
+
+}
+

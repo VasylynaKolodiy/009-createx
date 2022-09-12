@@ -4,10 +4,9 @@
   padding-bottom: 60px;
   background: var(--color-gray-200);
   &__list{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
   }
   &__item{
     transition: .3s ease;

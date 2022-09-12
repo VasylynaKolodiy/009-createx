@@ -1,0 +1,52 @@
+@import "../../../../assets/styles/vars";
+
+.decisions {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: var(--color-gray-200);
+  margin-bottom: 180px;
+
+  &__container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    padding-bottom: 120px;
+    flex-direction: row-reverse;
+  }
+
+  &__info-title{
+    color: var(--color-gray-900);
+    margin-bottom: 60px;
+  }
+
+  &__info-item{
+    margin-bottom: 20px;
+    @extend %base-regular;
+    color: var(--color-gray-800);
+    &::before{
+      content: url("../../../../assets/img/workpage/workdetailpage/decisions/vector.svg");
+      padding-right: 16px;
+    }
+  }
+  &__info{
+    width: 50%;
+  }
+
+  &__imgwrapper{
+    position: absolute;
+    width: 40%;
+    top: 0;
+    bottom: -160px;
+    left: 0;
+  }
+  &__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

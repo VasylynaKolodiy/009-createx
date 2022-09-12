@@ -1,0 +1,61 @@
+@import "../../../../assets/styles/vars";
+
+.projectgoal{
+  margin-bottom: 120px;
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 130px;
+  }
+  &__subscribe{
+    width: 49%;
+  }
+  &__subscribe-title{
+    color: var(--color-gray-900);
+    margin-bottom: 40px;
+  }
+  &__subscribe-description-tetx{
+    @extend %large-regular;
+    color: var(--color-gray-800);
+  }
+  &__subscribe-description-tetx:not(:last-child){
+    margin-bottom: 15px;
+  }
+
+
+  &__info{
+    width: 40%;
+    padding: 40px 60px;
+    background: #FFFFFF;
+    box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+  }
+
+  &__info-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 35px;
+  }
+  &__info-wrapper:not(:last-child){
+    margin-bottom: 16px;
+  }
+  &__info-details{
+    width: 32%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-gray-900);
+  }
+  &__info-info{
+    width: 78%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-gray-700);
+  }
+
+}

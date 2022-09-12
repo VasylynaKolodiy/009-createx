@@ -1,0 +1,57 @@
+@import "../../../../assets/styles/vars";
+
+
+.vacancycard{
+  &__item{
+    //
+    //width: 705px;
+    padding: 32px 42px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 4px;
+    margin-bottom: 24px;
+    transition: .3s ease;
+    &:hover{
+      box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    }
+  }
+  &__meta{
+    display: flex;
+    @extend %small-regular;
+    color: var(--color-gray-700);
+    margin-bottom: 12px;
+  }
+  &__city {
+    &:after {
+      content: ("|");
+      padding: 0 12px;
+    }
+
+    &:before {
+      content: url("../../../../assets/img/aboutuspage/available/vacancycard/city.svg");
+      margin-right: 10px;
+    }
+  }
+
+    &__time {
+      &:before {
+        content: url("../../../../assets/img/aboutuspage/available/vacancycard/time.svg");
+        margin-right: 10px;
+      }
+    }
+
+
+
+
+  &__info{
+    width: 435px;
+  }
+  &__position{
+    @extend %lead-bold;
+    color: var(--color-gray-900);
+  }
+}

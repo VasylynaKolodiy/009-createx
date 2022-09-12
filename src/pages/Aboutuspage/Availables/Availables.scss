@@ -1,0 +1,23 @@
+@import "../../../assets/styles/vars";
+
+.availables{
+
+  &__vacancy{
+    margin-bottom: 180px;
+  }
+
+  .pagetitle{
+    margin-top: 88px;
+    padding-top: 100px;
+    margin-bottom: 120px;
+  }
+
+  &__wrapper{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+
+}

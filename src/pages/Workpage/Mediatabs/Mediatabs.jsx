@@ -25,69 +25,78 @@ import {ReactComponent as LoadBtn} from '../../../assets/img/workpage/mediatabs/
 
 const tab2 = [
   {
-    link: '#',
+    link: '/work/cubes-building',
     image: image1,
     title: 'Cubes Building',
-    description: 'Business Centers'
+    description: 'Business Centers',
+    linkbutton: '/work/cubes-building',
   },
   {
-    link: '#',
+    link: '/work/modern-cottage',
     image: image2,
     title: 'Modern Cottage',
-    description: 'Private houses'
+    description: 'Private houses',
+    linkbutton: '/work/modern-cottage',
   },
 ]
 
 const tab3 = [
   {
-    link: '#',
+    link: '/work/luxury-beach-house',
     image: image3,
     title: 'Luxury Beach House',
-    description: 'Private houses'
+    description: 'Private houses',
+    linkbutton: '/work/luxury-beach-house',
   },
 
   {
-    link: '#',
+    link: '/work/modern-double-bedroom',
     image: image4,
     title: 'Modern Double Bedroom',
-    description: 'Apartments & flats'
+    description: 'Apartments & flats',
+    linkbutton: '/work/modern-double-bedroom',
   },
   {
-    link: '#',
+    link: '/work/kids-bedroom-with-decorations',
     image: image5,
     title: 'Kids Bedroom With Decorations',
-    description: 'Apartments & flats'
+    description: 'Apartments & flats',
+    linkbutton: '/work/kids-bedroom-with-decorations',
   },
 ]
 
 const tab4 = [
   {
-    link: '#',
+    link: '/work/the-pencil-building',
     image: image6,
     title: 'The Pencil Building',
-    description: 'Stores & Malls'
+    description: 'Stores & Malls',
+    linkbutton: '/work/the-pencil-building',
   },
 ]
 
 
 const tab5 = [
   {
-    link: '#',
+    link: '/work/red-finger-building',
     image: image7,
     title: 'Red Finger Building',
-    description: 'Business Centers'
+    description: 'Business Centers',
+    linkbutton: '/work/red-finger-building',
   },
   {
-    link: '#',
+    link: '/work/scandinavian-style-interior',
     image: image8,
     title: 'Scandinavian Style Interior',
-    description: 'Private houses'
+    description: 'Private houses',
+    linkbutton: '/work/scandinavian-style-interior',
   },
   {
-    link: '#',
+    link: '/work/brown-and-gray-painted-house',
     image: image9,
     title: 'Brown and Gray Painted House',
-    description: 'Private houses'
+    description: 'Private houses',
+    linkbutton: '/work/brown-and-gray-painted-house',
   },
 ]
 
@@ -144,31 +153,31 @@ const Mediatabs = () => {
 
 
           <TabPanel>
-            {[...tab2, ...tab3, ...tab4, ...tab5].map((item, i) =>
+            {[...tab2, ...tab3, ...tab4, ...tab5].map((item) =>
               <Portfolioitem item={item}/>
             )}
           </TabPanel>
 
           <TabPanel>
-            {tab2.map((item, i) =>
+            {tab2.map((item) =>
               <Portfolioitem item={item}/>
             )}
           </TabPanel>
 
           <TabPanel>
-            {tab3.map((item, i) =>
+            {tab3.map((item) =>
               <Portfolioitem item={item}/>
             )}
           </TabPanel>
 
           <TabPanel>
-            {tab4.map((item, i) =>
+            {tab4.map((item) =>
               <Portfolioitem item={item}/>
             )}
           </TabPanel>
 
           <TabPanel>
-            {tab5.map((item, i) =>
+            {tab5.map((item) =>
               <Portfolioitem item={item}/>
             )}
           </TabPanel>

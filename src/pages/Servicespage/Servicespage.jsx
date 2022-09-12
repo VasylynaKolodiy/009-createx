@@ -10,7 +10,6 @@ const Servicespage = () => {
   return (
     <section className="servicespage">
       <Pagetitle
-        title= 'SERVICES'
         description='If you are looking for a full-service construction company, look to Createx Construction Bureau. We are doing our best to be a partner for all of your construction needs.'
         background = {servicesBg}
       />

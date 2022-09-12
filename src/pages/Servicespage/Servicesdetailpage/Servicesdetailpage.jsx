@@ -16,6 +16,43 @@ import Portfolio from "../../Homepage/Portfolio/Portfolio";
 import Clients from "../../Homepage/Clients/Clients";
 import Pricing from "./Pricing/Pricing";
 
+import {ReactComponent as Client1} from '../../../assets/img/homepage/clients/clientslogo1.svg';
+import {ReactComponent as Client2} from '../../../assets/img/homepage/clients/clientslogo2.svg';
+import {ReactComponent as Client3} from '../../../assets/img/homepage/clients/clientslogo3.svg';
+import {ReactComponent as Client4} from '../../../assets/img/homepage/clients/clientslogo4.svg';
+import {ReactComponent as Client5} from '../../../assets/img/homepage/clients/clientslogo5.svg';
+import {ReactComponent as Client6} from '../../../assets/img/homepage/clients/clientslogo6.svg';
+
+
+const dataClients = [
+  {
+    link: "#",
+    logo: <Client1/>
+  },
+  {
+    link: "dfgdf#",
+    logo: <Client2/>
+  },
+  {
+    link: "#",
+    logo: <Client3/>
+  },
+  {
+    link: "#",
+    logo: <Client4/>
+  },
+  {
+    link: "#",
+    logo: <Client5/>
+  },
+  {
+    link: "#",
+    logo: <Client6/>
+  }
+]
+
+
+
 const ourBenefitsdata =
   {
     title: 'Our benefits',
@@ -40,70 +77,60 @@ const ourBenefitsdata =
     ]
   }
 
+const title = 'Related projects'
+const relatedProjectsData = [
+  {
+    link: '#',
+    image: relatedProjectsimage1,
+    title: 'Kids Bedroom With Decorations',
+    description: 'Apartments & flats'
+  },
+  {
+    link: '#',
+    image: relatedProjectsimage2,
+    title: 'Modern Double Bedroom',
+    description: 'Apartments & flats'
+  },
+  {
+    link: '#',
+    image: relatedProjectsimage3,
+    title: 'Scandinavian Style Interior',
+    description: 'Private houses'
+  },
 
-const relatedProjectsData = {
-  title: 'Related projects',
-  items: [
-    {
-      link: '#',
-      image: relatedProjectsimage1,
-      title: 'Kids Bedroom With Decorations',
-      description: 'Apartments & flats'
-    },
-    {
-      link: '#',
-      image: relatedProjectsimage2,
-      title: 'Modern Double Bedroom',
-      description: 'Apartments & flats'
-    },
-    {
-      link: '#',
-      image: relatedProjectsimage3,
-      title: 'Scandinavian Style Interior',
-      description: 'Private houses'
-    },
-
-    {
-      link: '#',
-      image: relatedProjectsimage3,
-      title: 'Scandinavian Style Interior',
-      description: 'Private houses'
-    },
-    {
-      link: '#',
-      image: relatedProjectsimage2,
-      title: 'Modern Double Bedroom',
-      description: 'Apartments & flats'
-    },
-    {
-      link: '#',
-      image: relatedProjectsimage1,
-      title: 'Kids Bedroom With Decorations',
-      description: 'Apartments & flats'
-    }
-  ]
-}
+  {
+    link: '#',
+    image: relatedProjectsimage3,
+    title: 'Scandinavian Style Interior',
+    description: 'Private houses'
+  },
+  {
+    link: '#',
+    image: relatedProjectsimage2,
+    title: 'Modern Double Bedroom',
+    description: 'Apartments & flats'
+  },
+  {
+    link: '#',
+    image: relatedProjectsimage1,
+    title: 'Kids Bedroom With Decorations',
+    description: 'Apartments & flats'
+  }
+]
 
 const Servicesdetailpage = () => {
   return (
     <section className="servicesdetailpage">
-        <Pagetitle
-          title= 'INTERIOR DESIGN'
-          description='Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.'
-          background = {servicesBg}
-        />
-        <Weoffer/>
-        <Steps/>
+      <Pagetitle
+        description='Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.'
+        background={servicesBg}
+      />
+      <Weoffer/>
+      <Steps/>
       <OurSomething data={ourBenefitsdata}/>
-      <Portfolio data={relatedProjectsData}/>
+      <Portfolio title={title} portfolioItemData={relatedProjectsData}/>
       <Pricing/>
-      <Clients/>
-
-
-
-
-        
-
+      <Clients data={dataClients}/>
     </section>
   )
 };

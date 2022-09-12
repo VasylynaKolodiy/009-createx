@@ -1,0 +1,54 @@
+@import "../../../assets/styles/vars";
+
+.contactform {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 130px;
+  }
+
+  &__inner-lefrtpart {
+
+  }
+
+  &__inner-rightpart {
+    width: 49%;
+  }
+
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__top-leftpart {
+    width: 48%;
+  }
+
+  &__top-rightpart {
+    width: 48%;
+  }
+
+  .input{
+    width: 100%;
+  }
+
+  .textarea {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .buttonWrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .input {
+    // width: 285px;
+  }
+}

@@ -24,6 +24,7 @@ const Portfolioitem = ({item}) => {
                   type='button'
                   color='inverse'
                   length='regular'
+                  link={item.linkbutton}
                 />
               </div>
             </div>

@@ -1,0 +1,16 @@
+@import "../../../assets/styles/vars";
+
+.workdetailpage{
+  background: url('../../../assets/img/workpage/workdetailpage/workdetailpage-bg.png') top right no-repeat;
+  .pagetitle {
+    background-color: transparent;
+    height: 360px;
+  }
+  .pagetitle__title {
+    @extend %display-2;
+    text-transform: capitalize;
+    color: var(--color-gray-900);
+    max-width: none;
+  }
+
+}

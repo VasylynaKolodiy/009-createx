@@ -22,7 +22,7 @@ const Breadcrumbs = () => {
               </Link>
               :
               <span className="breadcrumbs__item-link">
-                {(item.charAt(0).toUpperCase() + item.slice(1)).replace('-', ' ')}
+                {(item.charAt(0).toUpperCase() + item.slice(1)).replace(/-/g, ' ')}
               </span>
             }
 

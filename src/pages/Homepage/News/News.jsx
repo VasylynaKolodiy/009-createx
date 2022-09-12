@@ -5,8 +5,10 @@ import image1 from "../../../assets/img/homepage/news/image1.jpg";
 import image2 from "../../../assets/img/homepage/news/image2.jpg";
 import image3 from "../../../assets/img/homepage/news/image3.jpg";
 import Button from "../../../components/Button/Button";
+import Newsitem from "./Newsitem/Newsitem";
 
-const news = [
+
+const dataNews = [
   {
     image: image1,
     link: "#",
@@ -57,40 +59,11 @@ const News = () => {
         <h1 className="news__title">
           Recent news
         </h1>
-        <ul className="news__list">
-          {news.map((item, i) =>
-          <li className="news__item" key={i}>
-            <img className="news__item-img" src={item.image} alt="News image"/>
-
-            <div className="news__item-info">
-              <a className="news__item-title" href={item.link}>
-                {item.title}
-              </a>
-
-              <div className="news__item-meta">
-                <a className="news__item-meta-category" href={item.linkCategory}>
-                  {item.category}
-                </a>
-                <a className="news__item-meta-data" href={item.linkData}>
-                  {item.data}
-                </a>
-                <a className="news__item-meta-comments" href={item.linkComments}>
-                  {item.comments}
-                </a>
-              </div>
-
-              {item.description && (
-                <p className="news__item-description">
-                  {item.description}
-                </p>
-              )}
-
-            </div>
-
-          </li>
+        <div className="news__list">
+          {dataNews.map((item, i) =>
+            <Newsitem item={item} key={i}/>
           )}
-
-        </ul>
+        </div>
 
         <div className="explore">
           <h3 className="explore-title">

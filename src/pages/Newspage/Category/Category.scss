@@ -1,0 +1,94 @@
+@import "../../../assets/styles/vars";
+
+.category {
+  margin-bottom: 180px;
+
+  &__tabs{
+    margin-bottom: 70px;
+  }
+  &__title {
+    text-align: center;
+    color: var(--color-gray-900);
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  .react-tabs__tab {
+    width: 15%;
+    padding: 10px 0;
+    transition: .3s ease;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    bottom: 0;
+    text-align: center;
+    border-radius: 4px;
+
+    &:hover {
+      border-top: 1px solid var(--color-primary);
+      border-right: 1px solid var(--color-primary);
+      border-bottom: 1px solid var(--color-primary);
+      border-left: 1px solid var(--color-primary);
+      .category__name {
+        @extend %base-bold;
+        color: var(--color-primary);
+      }
+    }
+  }
+
+
+  .react-tabs__tab--selected {
+    border-top: 1px solid var(--color-primary);
+    border-right: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    border-left: 1px solid var(--color-primary);
+    .category__name {
+      color: var(--color-primary);
+    }
+  }
+
+  .react-tabs__tab:focus:after{
+    display: none;
+
+
+  }
+  .react-tabs__tab-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 482px;
+    grid-gap: 60px 30px;
+  }
+
+  .category__name {
+    @extend %base-bold;
+    color: var(--color-gray-600);
+    transition: .3s ease;
+  }
+  &__pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__pages-number{
+    @extend %base-bold;
+    color: var(--color-gray-800);
+  }
+  &__pages-number.active{
+    color: var(--color-primary);
+  }
+  &__pages-number:last-child::after{
+    content: url("../../../assets/img/newspage/category/right.svg");
+    padding-left: 24px;
+  }
+
+}
+
