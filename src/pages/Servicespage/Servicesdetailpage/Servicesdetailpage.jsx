@@ -80,38 +80,38 @@ const ourBenefitsdata =
 const title = 'Related projects'
 const relatedProjectsData = [
   {
-    link: '#',
+    link: '/work/kids-bedroom-with-decorations',
     image: relatedProjectsimage1,
     title: 'Kids Bedroom With Decorations',
     description: 'Apartments & flats'
   },
   {
-    link: '#',
+    link: '/work/modern-double-bedroom',
     image: relatedProjectsimage2,
     title: 'Modern Double Bedroom',
     description: 'Apartments & flats'
   },
   {
-    link: '#',
+    link: '/work/scandinavian-style-interior',
     image: relatedProjectsimage3,
     title: 'Scandinavian Style Interior',
     description: 'Private houses'
   },
 
   {
-    link: '#',
+    link: '/work/scandinavian-style-interior',
     image: relatedProjectsimage3,
     title: 'Scandinavian Style Interior',
     description: 'Private houses'
   },
   {
-    link: '#',
+    link: '/work/modern-double-bedroom',
     image: relatedProjectsimage2,
     title: 'Modern Double Bedroom',
     description: 'Apartments & flats'
   },
   {
-    link: '#',
+    link: '/work/kids-bedroom-with-decorations',
     image: relatedProjectsimage1,
     title: 'Kids Bedroom With Decorations',
     description: 'Apartments & flats'

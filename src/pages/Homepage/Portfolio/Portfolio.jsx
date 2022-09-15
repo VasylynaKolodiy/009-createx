@@ -42,7 +42,7 @@ const Portfolio = ({title, portfolioItemData}) => {
                 type='button'
                 color='primary'
                 length='large'
-                link='http://localhost:3000/work'
+                link='/work'
               />
             </div>
 

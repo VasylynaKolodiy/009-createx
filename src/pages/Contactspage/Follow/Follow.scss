@@ -1,0 +1,31 @@
+@import "../../../assets/styles/vars";
+
+.follow{
+  background-color: var(--color-gray-200);
+  padding-top: 40px;
+  padding-bottom: 120px;
+  &__title{
+    text-align: center;
+    color: var(--color-gray-900);
+    margin-bottom: 40px;
+  }
+  &__social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__social-link{
+    & svg path{
+      transition: .3s ease;
+      fill: var(--color-gray-700);
+    }
+
+  }
+  &__social-link:hover{
+    & svg path{
+      fill: var(--color-primary);
+    }
+  }
+
+}

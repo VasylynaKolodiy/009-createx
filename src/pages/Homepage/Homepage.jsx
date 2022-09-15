@@ -27,71 +27,68 @@ import {ReactComponent as Client6} from '../../assets/img/homepage/clients/clien
 
 const dataClients = [
   {
-    link: "#",
+    link: "/",
     logo: <Client1/>
   },
   {
-    link: "dfgdf#",
+    link: "/",
     logo: <Client2/>
   },
   {
-    link: "#",
+    link: "/",
     logo: <Client3/>
   },
   {
-    link: "#",
+    link: "/",
     logo: <Client4/>
   },
   {
-    link: "#",
+    link: "/",
     logo: <Client5/>
   },
   {
-    link: "#",
+    link: "/",
     logo: <Client6/>
   }
 ]
 
 
 
-
-
-
 const title = 'Browse our selected projects and learn more about our work'
 const portfolioItemData = [
   {
-    link: '#',
+    link: '/work/red-finger-building',
     image: image1,
     title: 'Red Finger Building',
     description: 'Business Centers'
   },
   {
-    link: '#',
+    link: '/work/cubes-building',
     image: image2,
     title: 'Cubes Building',
     description: 'Business Centers'
   },
   {
-    link: '#',
+    link: '/work/the-pencil-building',
     image: image3,
     title: 'The Pencil Building',
     description: 'Stores & Malls'
   },
 
   {
-    link: '#',
+    link: '/work/the-pencil-building',
     image: image3,
     title: 'The Pencil Building',
     description: 'Stores & Malls'
   },
   {
-    link: '#',
+    link: '/work/cubes-building',
     image: image2,
     title: 'Cubes Building',
     description: 'Business Centers'
   },
   {
-    link: '#',
+    link: '/work/red-finger-building',
     image: image1,
     title: 'Red Finger Building',
     description: 'Business Centers'

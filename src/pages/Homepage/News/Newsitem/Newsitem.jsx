@@ -1,5 +1,6 @@
 import React from "react";
 import './Newsitem.scss';
+import { Link } from "react-router-dom";
 
 
 const Newsitem = ({item}) => {
@@ -9,9 +10,9 @@ const Newsitem = ({item}) => {
       <img className="newsitem__item-img" src={item.image} alt="Newsitem image"/>
 
       <div className="newsitem__item-info">
-        <a className="newsitem__item-title" href={item.link}>
+        <Link className="newsitem__item-title" to={item.link}>
           {item.title}
-        </a>
+        </Link>
 
         <div className="newsitem__item-meta">
           <a className="newsitem__item-meta-category" href={item.linkCategory}>

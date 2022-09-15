@@ -27,38 +27,38 @@ import portfoliocard3 from "../../../assets/img/workpage/workdetailpage/portfoli
 const title = 'Similar projects'
 const portfolioItemData = [
   {
-    link: '#',
+    link: '/work/luxury-beach-house',
     image: portfoliocard1,
     title: 'Luxury Beach House',
     description: 'Private Houses'
   },
   {
-    link: '#',
+    link: '/work/brown-and-gray-painted-house',
     image: portfoliocard2,
     title: 'Brown and Gray Painted House',
     description: 'Private Houses'
   },
   {
-    link: '#',
+    link: '/work/scandinavian-style-interior',
     image: portfoliocard3,
     title: 'Scandinavian Style Interior',
     description: 'Scandinavian Style Interior'
   },
 
   {
-    link: '#',
+    link: '/work/luxury-beach-house',
     image: portfoliocard1,
     title: 'Luxury Beach House',
     description: 'Private Houses'
   },
   {
-    link: '#',
+    link: '/work/brown-and-gray-painted-house',
     image: portfoliocard2,
     title: 'Brown and Gray Painted House',
     description: 'Private Houses'
   },
   {
-    link: '#',
+    link: '/work/scandinavian-style-interior',
     image: portfoliocard3,
     title: 'Scandinavian Style Interior',
     description: 'Scandinavian Style Interior'

@@ -84,15 +84,15 @@ const Article = () => {
            </p>
 
            <div className="metadescription__social">
-             <a className="metadescription__social-facebook">
+             <a className="metadescription__social-facebook" href='#'>
                <Facebook/>
              </a>
 
-             <a className="metadescription__social-linkedin">
+             <a className="metadescription__social-linkedin" href='#'>
                <Linkedin/>
              </a>
 
-             <a className="metadescription__social-twitter">
+             <a className="metadescription__social-twitter" href='#'>
                <Twitter/>
              </a>
            </div>

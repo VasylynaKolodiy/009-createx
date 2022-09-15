@@ -12,25 +12,25 @@ import Button from "../../../components/Button/Button";
 
 const data = [
   {
-    link: '#',
+    link: '/services/construction',
     icon: <Construction/>,
     description: 'Construction',
     background: servicesBg
   },
   {
-    link: '#',
+    link: '/services/project-development',
     icon: <Development/>,
     description: 'Project Development',
     background: servicesBg
   },
   {
-    link: '#',
+    link: '/services/interior-design',
     icon: <Design/>,
     description: 'Interior Design',
     background: servicesBg
   },
   {
-    link: '#',
+    link: '/services/repairs',
     icon: <Repairs/>,
     description: 'Repairs',
     background: servicesBg
@@ -79,7 +79,7 @@ const Services = () => {
               type='button'
               color='primary'
               length='large'
-              link='http://localhost:3000/servies'
+              link='/services'
             />
           </div>
 

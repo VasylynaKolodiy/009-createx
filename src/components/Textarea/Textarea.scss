@@ -83,3 +83,7 @@
     color: var(--color-gray-600);
   }
 }
+.textarea:not(:placeholder-shown) {
+  color: var(--color-gray-900);
+  background: #FFFFFF;
+}

@@ -1,6 +1,18 @@
 @import "../../../assets/styles/vars";
 
 .contactform {
+  margin-bottom: 120px;
+  &__title{
+    text-align: center;
+    color: var(--color-gray-900);
+    margin-bottom: 24px;
+  }
+  &__description{
+    @extend %large-regular;
+    text-align: center;
+    color: var(--color-gray-700);
+    margin-bottom: 60px;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -9,13 +21,18 @@
   }
 
   &__inner-lefrtpart {
-
+    width: 40%;
+    height: 100%;
+  }
+  &__inner-img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
   }
 
   &__inner-rightpart {
     width: 49%;
   }
-
 
   &__top {
     display: flex;
@@ -48,7 +65,70 @@
     justify-content: center;
   }
 
-  .input {
-    // width: 285px;
+  .inputWrapper {
+    margin-bottom: 24px;
   }
+
+  fieldset {
+    display: block;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    border-width: 0;
+  }
+  &__radio-legend{
+    @extend %base-regular;
+    color: var(--color-gray-800);
+    margin-bottom: 24px;
+  }
+  &__radio-btn{
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    accent-color: var(--color-primary);
+  }
+  &__radio-btn-label{
+    @extend %base-regular;
+    color: var(--color-gray-800);
+    margin-right: 24px;
+  }
+  &__check-btn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  &__check-label{
+    @extend %base-regular;
+    color: var(--color-gray-800);
+
+      justify-self: flex-start;
+      margin-bottom: 24px;
+
+  }
+  &__checkboxWrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: 112%;
+  }
+  &__check-checkbox{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    accent-color: var(--color-primary);
+    position: relative;
+    top: 3px;
+    left: 0;
+  }
+  & .buttonWrapper{
+    justify-content: flex-end;
+  }
+
+
+
+
 }

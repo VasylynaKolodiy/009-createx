@@ -11,7 +11,7 @@ import Newsitem from "./Newsitem/Newsitem";
 const dataNews = [
   {
     image: image1,
-    link: "#",
+    link: "/news/how-to-build-climate-change-resilient-infrastructure",
     title: 'How to Build Climate Change-Resilient Infrastructure',
     category: 'Industry News',
     linkCategory: "#",
@@ -24,7 +24,7 @@ const dataNews = [
 
   {
     image: image2,
-    link: "#",
+    link: "/news/how-construction-can-help-itself",
     title: 'How Construction Can Help Itself',
     category: 'Innovation',
     linkCategory: "#",
@@ -37,7 +37,7 @@ const dataNews = [
 
   {
     image: image3,
-    link: "#",
+    link: "/news/types-of-flooring-materials",
     title: 'Types of Flooring Materials',
     category: 'Company News',
     linkCategory: "#",
@@ -74,7 +74,7 @@ const News = () => {
             type='button'
             color='primary'
             length='large'
-            link='http://localhost:3000/news'
+            link='/news'
           />
         </div>
        

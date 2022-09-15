@@ -9,7 +9,9 @@ import OurSomething from "../../../components/OurSomething/OurSomething";
 import {ReactComponent as Training} from "../../../assets/img/aboutuspage/available/training.svg";
 import {ReactComponent as Growth} from "../../../assets/img/aboutuspage/available/growth.svg";
 import {ReactComponent as Salary} from "../../../assets/img/aboutuspage/available/salary.svg";
-import Subscribemodal from "../Subscribemodal/Subscribemodal";
+import Modal from "./Modal/Modal";
+import Input from "../../../components/Input/Input";
+import Textarea from "../../../components/Textarea/Textarea";
 
 const ourSomethingData =
   {
@@ -70,7 +72,8 @@ const dataVacancyCard = [
 
 const Availables = () => {
 
-  const [isOpenSubscribeModal] = useState(false);
+  const [isOpenSubscribeModal, setIsOpenSubscribeModal] = useState(false);
+  const [isOpenCVModal, setIsOpenCVModal] = useState(false);
 
   return (
     <section className="availables">
@@ -84,28 +87,105 @@ const Availables = () => {
         <div className="availables__wrapper">
           <div className="availables__vacancy">
             {dataVacancyCard.map((item) =>
-              <Vacancycard item={item}/>
+              <Vacancycard item={item}
+                           isOpenCVModal={isOpenCVModal}
+                           setIsOpenCVModal={setIsOpenCVModal}
+              />
             )}
           </div>
-          <Cta/>
+          <Cta
+            isOpenSubscribeModal={isOpenSubscribeModal}
+            setIsOpenSubscribeModal={setIsOpenSubscribeModal}
+            isOpenCVModal={isOpenCVModal}
+            setIsOpenCVModal={setIsOpenCVModal}
+          />
         </div>
-
         <OurSomething data={ourSomethingData}/>
-        <Subscribemodal/>
-
-
-
       </div>
 
 
       {isOpenSubscribeModal && (
-        <div className="modal">
-          <div className="modal__content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in maxime nostrum numquam odit perferendis, placeat quibusdam quos saepe totam? Alias blanditiis, cum dolore ducimus ea excepturi, facere nam nulla optio quas recusandae, unde voluptatem. A amet aperiam, aspernatur aut consequatur, dolorem eos eum eveniet exercitationem illum impedit incidunt ipsa iste iure modi nemo nisi nostrum nulla officiis possimus quaerat quasi quia quo quod rem tenetur voluptas. Aperiam assumenda aut dolor doloremque ea eaque eius error eum fuga hic illum inventore neque nihil nostrum odit placeat praesentium quae quas quasi quis rem reprehenderit, soluta suscipit tempora tenetur ut vitae voluptatibus!</p>
-          </div>
-        </div>
+        <Modal
+          close={() => setIsOpenSubscribeModal(false)}
+          title = "Subscribe to our newsletter"
+        >
+          <Input
+            id="subscribemodal__input-name"
+            placeholder="Your name"
+            type="text"
+            length="default"
+            color="light"
+            label="Name*"
+          />
+
+          <Input
+            id="subscribemodal__input-email"
+            placeholder="Your working email"
+            type="email"
+            length="default"
+            color="light"
+            label="Email*"
+          />
+        </Modal>
       )}
 
+
+      {isOpenCVModal && (
+        <Modal
+          close={() => setIsOpenCVModal(false)}
+          title = "Send your CV"
+        >
+          <Input
+            id="cvmodal__input-name"
+            placeholder="Your name"
+            type="text"
+            length="default"
+            color="light"
+            label="Name*"
+          />
+
+          <Input
+            id="cvmodal__input-location"
+            placeholder="Choose your location"
+            type="text"
+            length="default"
+            color="light"
+            label="Location*"
+          />
+
+          <Input
+            id="cvmodal__input-phone"
+            placeholder="Your phone number"
+            type="tel"
+            length="default"
+            color="light"
+            label="Phone*"
+          />
+
+          <Input
+            id="cvmodal__input-email"
+            placeholder="Your working email"
+            type="email"
+            length="default"
+            color="light"
+            label="Email*"
+          />
+
+          <Textarea
+            id="cvmodal__textarea"
+            placeholder="Your covering letter"
+            length="default"
+            color="light"
+            rows="3"
+            label="Сovering letter"
+          />
+
+          {<div className="modal__file">
+            <label className="modal__file-label" htmlFor="cv">Attach your CV*</label>
+            <input className="modal__file-input" type="file" id="cv" name="cv" accept="image/png, image/jpeg"/>
+          </div>}
+        </Modal>
+      )}
     </section>
   )
 };

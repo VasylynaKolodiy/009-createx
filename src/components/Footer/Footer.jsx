@@ -1,5 +1,6 @@
 import React from "react";
 import './Footer.scss';
+import { Link } from "react-router-dom";
 import footerLogo from '../../assets/img/footer/footer-logo.svg';
 import heart from '../../assets/img/footer/heart.png';
 import Button from "../../components/Button/Button";
@@ -111,21 +112,21 @@ const Footer = () => {
 
 
                 <li className="footer__about-item">
-                  <a className="footer__about-link" href="#">
+                  <Link className="footer__about-link" to="/about-us">
                     About Us
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="footer__about-item">
-                  <a className="footer__about-link" href="#">
+                  <Link className="footer__about-link" to="/about-us/available-positions">
                     Available Positions
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="footer__about-item">
-                  <a className="footer__about-link" href="#">
+                  <Link className="footer__about-link" to="/contacts">
                     Contacts
-                  </a>
+                  </Link>
                 </li>
               </ul> {/*footer__about-list*/}
             </div> {/*footer__about*/}
@@ -169,21 +170,21 @@ const Footer = () => {
 
 
                 <li className="footer__experience-item">
-                  <a className="footer__experience-link" href="#">
+                  <Link className="footer__experience-link" to="/services">
                     Services
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="footer__experience-item">
-                  <a className="footer__experience-link" href="#">
+                  <Link className="footer__experience-link" to="/work">
                     Work
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="footer__experience-item">
-                  <a className="footer__experience-link" href="#">
+                  <Link className="footer__experience-link" to="/news">
                     News
-                  </a>
+                  </Link>
                 </li>
               </ul> {/*footer__experience-list*/}
             </div> {/*footer__experience*/}
@@ -203,7 +204,7 @@ const Footer = () => {
           <div className="footer__bottom-content">
             <p className="footer__copyright">
               © All rights reserved. Made with
-              <span><img className="footer__copyright-heart" src={heart} /></span>
+              <span><img className="footer__copyright-heart" src={heart} alt='Footer copyright'/></span>
               by Createx Studio
             </p>
             <div className="footer__gototop">

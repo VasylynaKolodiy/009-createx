@@ -3,11 +3,11 @@ import './Button.scss'
 import { Link } from "react-router-dom";
 import {ReactComponent as Arrow} from '../../assets/img/button/arrow-inverse-large.svg';
 
-const Button = ({title, type, color, length, link, withAddIcon}) => {
+const Button = ({title, type, color, length, link, withAddIcon, onClick}) => {
   return (
     <div className="buttonWrapper">
       { (link) ? (
-        <button type={type} className={`button ${color} ${length}`} formAction='#'>
+        <button type={type} className={`button ${color} ${length}`} onClick={onClick}>
           <span>{title}</span>
           <Link className={`buttonlink`} to={link}>
           </Link>
@@ -16,7 +16,7 @@ const Button = ({title, type, color, length, link, withAddIcon}) => {
           )}
         </button>
       ) : (
-        <button type={type} className={`button ${color} ${length}`} formAction='#'>
+        <button type={type} className={`button ${color} ${length}`}>
           <span>{title}</span>
           {withAddIcon && (
             <Arrow/>

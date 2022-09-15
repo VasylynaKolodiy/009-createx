@@ -26,10 +26,6 @@ const Header = () => {
           <nav className="header__menu">
             <ul className="header__menu-list">
               <li className="header__menu-item">
-                {/*<Link className="header__menu-item-link" to="#">*/}
-                {/*  About Us*/}
-                {/*<Link/>*/}
-                {/*<NavLink to="/" activeClassName="active">Home</NavLink>*/}
                 <NavLink className="header__menu-item-link" to="/about-us">
                   About Us
                 </NavLink>

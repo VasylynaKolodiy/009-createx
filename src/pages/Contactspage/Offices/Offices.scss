@@ -1,0 +1,67 @@
+@import "../../../assets/styles/vars";
+
+.offices{
+  background-color: var(--color-gray-200);
+  padding: 80px 0;
+  &__title{
+    color: var(--color-gray-900);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  &__description{
+    @extend %large-regular;
+    color: var(--color-gray-700);
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    //gap: 100px;
+  }
+  &__item{
+    width: 31%;
+    padding: 0 55px;
+    position: relative;
+    &:not(:last-child):after{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 1px;
+      height: 100%;
+      background: var(--divider-gradient);
+    }
+  }
+  &__city{
+    color: var(--color-gray-900);
+    margin-bottom: 24px;
+  }
+  &__address{
+    @extend %base-regular;
+    color: var(--color-gray-900);
+    margin-bottom: 4px;
+  }
+  &__link{
+    color: var(--color-primary);
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+  .info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    @extend %base-regular;
+    .label{
+      color: var(--color-gray-700);
+      margin-bottom: 4px;
+    }
+    .link{
+      color: var(--color-gray-900);
+    }
+
+  }
+}

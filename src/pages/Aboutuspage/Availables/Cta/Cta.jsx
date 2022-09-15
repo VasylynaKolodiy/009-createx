@@ -1,17 +1,8 @@
 import React from "react";
 import './Cta.scss';
 import Button from "../../../../components/Button/Button";
-import Subscribemodal from "../../Subscribemodal/Subscribemodal";
 
-
-// const container = () => {
-//   document.querySelector('.inverse');
-// }
-// const signUpButton = () => {
-//   container.classList.add('right-panel-active');
-// };
-
-const Cta = () => {
+const Cta = ({isOpenSubscribeModal, setIsOpenSubscribeModal, isOpenCVModal, setIsOpenCVModal}) => {
 
   return (
     <section className="cta">
@@ -30,6 +21,7 @@ const Cta = () => {
             color='inverse'
             length='large'
             link='#'
+            onClick={() => setIsOpenSubscribeModal(!isOpenSubscribeModal)}
           />
           <Button
             title='send cv'
@@ -37,23 +29,9 @@ const Cta = () => {
             color='primary'
             length='large'
             link='#'
+            onClick={() => setIsOpenCVModal(!isOpenCVModal)}
           />
         </p>
-      </div>
-
-      <div className="App">
-        <Subscribemodal openButtonText="subscribe">
-          <form>
-            <div>
-              <label htmlFor="email-input">Email:</label>
-              <input type="email" id="email-input" name="email"/>
-            </div>
-            <div>
-              <label htmlFor="password-input">Password:</label>
-              <input type="password" id="password-input" name="password"/>
-            </div>
-          </form>
-        </Subscribemodal>
       </div>
     </section>
   )

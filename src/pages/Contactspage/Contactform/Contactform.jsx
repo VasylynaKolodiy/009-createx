@@ -17,7 +17,7 @@ const Contactform = () => {
         </p>
         <div className="contactform__inner">
           <div className="contactform__inner-lefrtpart">
-            <img className="contactform__inner-img" src={formImg} alt="Contactform image"/>
+            <img className="contactform__inner-img" src={formImg} alt="Contactform"/>
           </div>
 
 
@@ -53,7 +53,6 @@ const Contactform = () => {
                 </div>
 
                 <div className="contactform__top-rightpart">
-
                   <Input
                     id="contactform__input-interested"
                     placeholder="Interior Design"
@@ -70,17 +69,18 @@ const Contactform = () => {
                     color="light"
                     label="Location*"
                   />
-                  <Input
-                    id="contactform__input-email"
-                    placeholder="Your working email"
-                    type="email"
-                    length="large"
-                    color="light"
-                    label="Email"
-                  />
+                  <fieldset className="contactform__radio">
+                    <p className="contactform__radio-legend">Preferred contact method</p>
+                    <input className="contactform__radio-btn" type="radio" id="phone" name="radio" value="Phone"/>
+                    <label className="contactform__radio-btn-label" htmlFor="phone">Phone</label>
 
+                    <input className="contactform__radio-btn" type="radio" id="email" name="radio" value="Email"/>
+                    <label className="contactform__radio-btn-label" htmlFor="email">Email</label>
+
+                    <input className="contactform__radio-btn" type="radio" id="viber" name="radio" value="Viber"/>
+                    <label className="contactform__radio-btn-label" htmlFor="viber">Viber</label>
+                  </fieldset>
                 </div>
-
               </div>
 
               <div className="contactform__bottom">
@@ -94,21 +94,27 @@ const Contactform = () => {
                 />
               </div>
 
-              <Button
-                title='send request'
-                type='submit'
-                color='primary'
-                length='large'
-              />
+              <div className="contactform__check-btn">
 
 
+                <div className="contactform__checkboxWrapper">
+                  <input className="contactform__check-checkbox" type="checkbox" id="contactform__check" value="yes"/>
+                  <label className="contactform__check-label" htmlFor="contactform__check">
+                    I agree to receive communications from Createx Construction Bureau.
+                  </label>
+                </div>
+
+
+                <Button
+                  title='send request'
+                  type='submit'
+                  color='primary'
+                  length='large'
+                />
+              </div>
             </form>
           </div>
-
-
         </div>
-
-
       </div>
     </section>
   )

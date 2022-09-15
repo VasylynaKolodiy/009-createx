@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, useLocation} from "react-router-dom";
 import Homepage from "./pages/Homepage/Homepage";
 import Application from "./components/Application/Application";
 import Servicespage from "./pages/Servicespage/Servicespage";
@@ -15,6 +15,12 @@ import Newsdetailpage from "./pages/Newspage/Newsdetailpage/Newsdetailpage";
 import Contactspage from "./pages/Contactspage/Contactspage";
 
 function App() {
+
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="App">
       <Header/>

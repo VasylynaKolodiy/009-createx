@@ -2,8 +2,7 @@ import React from "react";
 import './Vacancycard.scss';
 import Button from "../../../../components/Button/Button";
 
-
-const Vacancycard = ({item}) => {
+const Vacancycard = ({item, isOpenCVModal, setIsOpenCVModal}) => {
   return (
     <section className="vacancycard">
       <div className="vacancycard__container container">
@@ -31,13 +30,10 @@ const Vacancycard = ({item}) => {
               color='inverse'
               length='regular'
               link={item.link}
+              onClick={() => setIsOpenCVModal(!isOpenCVModal)}
             />
           </div>
-
-
         </div>
-
-
       </div>
     </section>
   )

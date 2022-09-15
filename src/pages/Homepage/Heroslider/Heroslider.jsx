@@ -17,7 +17,7 @@ const data = [
   },
   {
     imageUrl: sliderBg,
-    title: 'CREATEX CONSTRg fdUCTION',
+    title: 'CREATEX CONSTRUCTION',
     description: 'Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.'
   },
   {
@@ -56,7 +56,7 @@ const Heroslider = () => {
                   type='button'
                   color='inverse'
                   length='large'
-                  link = 'http://localhost:3000/about-us'
+                  link = '/about-us'
                 />
                 <Button
                   title='SUBMIT REQUEST'
